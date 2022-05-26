@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color:  #262d33;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.App {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center; /*centers items on the line (the x-axis by default)*/
+	align-items: center;
+}
+
+.Grid-Container {
+	display: grid;
+	grid-template-columns: repeat( 10, 1fr );
+	grid-column-gap: 2px;
+	grid-row-gap: 2px;
+	background-color:  #31658f;
+}
+
+.Grid-Container > .row {
+	margin: 0px;
+}
+
+.Grid-Container > .row:hover {
+	background-color: yellow;
+}
+
+.row {
+	display: grid;
+}
+
+.cell {
+	margin: 2px;
+	padding: 10px;
+}
+
+.row > .cell:hover {
+	background-color: red;
+} 
+
+.cell.blue {
+	background-color: blue;
+}
+
+
